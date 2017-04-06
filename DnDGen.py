@@ -89,7 +89,7 @@ while ans:
 		#print("intelligence = ", char['int'])
 		#print("wisdom = ", char['wis'])
 		#print("charisma = ", char['cha'])
-		char['ali'] = "alignment = " +  char['alx'] + char['aly']
+		char['ali'] = "Alignment = " +  char['alx'] + char['aly']
 
 
 		fileName = name + '.txt'
