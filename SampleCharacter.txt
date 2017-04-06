@@ -1,0 +1,10 @@
+SampleCharacter The Scholar
+Race: Dwarf
+Class: Destined Sorcerer
+alignment = Lawful Good 
+Strength: 10
+Dexterity: 6
+Constitution: 10
+Intelligence: 12
+Wisdom: 10
+Charisma: 11
