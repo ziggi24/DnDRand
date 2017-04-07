@@ -18,7 +18,7 @@ while ans:
 		nameStr = ["Strong", "Powerful", "Stable", "Big", "Forceful", "Unstoppable", "Destroyer", "Crusher", "All Powerful"]
 		nameDex = ["Dexterous", "Quick", "Speedy", "Agile", "Adept", "Nimble", "Shadow", "Sneaky", "Sneaker", "Backstabber", "Deceptive", "Twinkle Toes", "Fleet Footed"]
 		nameCon = ["Hearty", "Heavy", "Stout", "Portly", "Beefy", "Large", "Wall", "Muscle", "Diabetic", "Fat", "Tank", "Unmovable"]
-		nameInt = ["Intelligent", "Scholar", "Astute", "Profound", "Brain", "Knowledgeable", "Well Read", "Nerd", "Graduated", "Wizard", "Four Eyed"]
+		nameInt = ["Intelligent", "Professor", "Scholar", "Astute", "Profound", "Brain", "Knowledgeable", "Well Read", "Nerd", "Graduated", "Wizard", "Four Eyed"]
 		nameWis = ["Wise", "Old", "Sage", "Spiritual", "Enlightened", "Rational", "Crucified", "All Knowing", "Master", "Sensei", "One Eyed", "Cosmic"]
 		nameCha = ["Charismatic", "Dazzling", "Beautiful", "Appealing", "Alluring", "Lover", "Companion", "Mistress", "Well Endowed", "Smooth Talker", "Whisperer", "Sensual", "Smooth"]
 		nameDef = ["Royal", "Unknown", "Lost", "Child", "Loner", "Wanderer", "Unforgiven", "Shackled", "Prisoner", "Connoisseur", "Jester", "Oaf", "Aloof", "Lazy", "Fallen", "Hilbilly", "Confused", "Slave", "Runaway", "Artist", "Loser", "Defeated", "Deadbeat", "Gambler", "Outsider", "Poet", "Homeless" ]
@@ -90,13 +90,16 @@ while ans:
 		#print("wisdom = ", char['wis'])
 		#print("charisma = ", char['cha'])
 		char['ali'] = "Alignment = " +  char['alx'] + char['aly']
-
+		
+		char['age'] = random.randint(1, 20) + random.randint(1, 20) + random.randint(1, 20) + 10
 
 		fileName = name + '.txt'
 		file = open(fileName, 'w+')
 
 
 		file.write(str(char['name']))
+		file.write("\n")
+		file.write("Age: " + str(char['age']) + " years")
 		file.write("\n")
 		file.write("Race: " + char['race'])
 		file.write("\n")
