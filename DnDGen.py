@@ -15,13 +15,13 @@ while ans:
 		alx = ["Lawful ", "Neutral ", "Chaotic "]
 		aly = ["Good ", "Neutral ", "Evil "]
 
-		nameStr = ["Strong", "Powerful", "Stable", "Big", "Forceful"]
-		nameDex = ["Dexterous", "Quick", "Speedy", "Agile", "Adept", "Nimble" ]
-		nameCon = ["Hearty", "Heavy", "Stout", "Portly", "Beefy", "Large"]
-		nameInt = ["Intelligent", "Scholar", "Astute", "Profound", "Brain", "Knowledgeable"]
-		nameWis = ["Wise", "Old", "Sage", "Spiritual", "Enlightened", "Rational"]
-		nameCha = ["Charismatic", "Dazzling", "Beautiful", "Appealing", "Alluring"]
-		nameDef = ["Royal", "Unknown", "Lost", "Child", "Loner"]
+		nameStr = ["Strong", "Powerful", "Stable", "Big", "Forceful", "Unstoppable", "Destroyer", "Crusher", "All Powerful"]
+		nameDex = ["Dexterous", "Quick", "Speedy", "Agile", "Adept", "Nimble", "Shadow", "Sneaky", "Sneaker", "Backstabber", "Deceptive", "Twinkle Toes", "Fleet Footed"]
+		nameCon = ["Hearty", "Heavy", "Stout", "Portly", "Beefy", "Large", "Wall", "Muscle", "Diabetic", "Fat", "Tank", "Unmovable"]
+		nameInt = ["Intelligent", "Scholar", "Astute", "Profound", "Brain", "Knowledgeable", "Well Read", "Nerd", "Graduated", "Wizard", "Four Eyed"]
+		nameWis = ["Wise", "Old", "Sage", "Spiritual", "Enlightened", "Rational", "Crucified", "All Knowing", "Master", "Sensei", "One Eyed", "Cosmic"]
+		nameCha = ["Charismatic", "Dazzling", "Beautiful", "Appealing", "Alluring", "Lover", "Companion", "Mistress", "Well Endowed", "Smooth Talker", "Whisperer", "Sensual", "Smooth"]
+		nameDef = ["Royal", "Unknown", "Lost", "Child", "Loner", "Wanderer", "Unforgiven", "Shackled", "Prisoner", "Connoisseur", "Jester", "Oaf", "Aloof", "Lazy", "Fallen", "Hilbilly", "Confused", "Slave", "Runaway", "Artist", "Loser", "Defeated", "Deadbeat", "Gambler", "Outsider", "Poet", "Homeless" ]
 
 		race = ["Human", "Dwarf", "Elf", "Gnome", "Half-Elf", "Halfling", "Half-Orc"]
 

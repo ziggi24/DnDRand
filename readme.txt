@@ -11,7 +11,7 @@ TO BE ADDED
 - comments to the python script
 - random weapon based on class 
 - random apparel 
-- larger pool of names and titles 
+- larger pool of names and titles (DONE)
 - find players top two stats and better sort them into classes
 - small backstory for each character (still being considered) 
 - anything else?
