@@ -1,5 +1,6 @@
 import random 
 import sys
+import Names
 
 ans = True
 
@@ -48,25 +49,25 @@ while ans:
 		char['aly'] = random.choice(aly)
 
 		if char['str'] > char['dex'] and char['str'] > char['con'] and char['str'] > char['int'] and char['str'] > char['wis'] and char['str'] > char['cha']:
-			char['name'] = name + " The " +  random.choice(nameStr)
+			char['name'] = name + " " + Names.getName() + " The " +  random.choice(nameStr)
 			char['class'] = random.choice(classStr)
 		elif char['dex'] > char['str'] and char['dex'] > char['con'] and char['dex'] > char['int'] and char['dex'] > char['wis'] and char['dex'] > char['cha']:
-			char['name'] = name + " The " + random.choice(nameDex)
+			char['name'] = name + " " + Names.getName() + " The " + random.choice(nameDex)
 			char['class'] = random.choice(classDex)
 		elif char['con'] > char['str'] and char['con'] > char['dex'] and char['con'] > char['int'] and char['con'] > char['wis'] and char['con'] > char['cha']:
-			char['name'] = name + " The " + random.choice(nameCon)
+			char['name'] = name + " " + Names.getName() + " The " + random.choice(nameCon)
 			char['class'] = random.choice(classCon)
 		elif char['int'] > char['str'] and char['int'] > char['dex'] and char['int'] > char['con'] and char['int'] > char['wis'] and char['int'] > char['cha']:
-			char['name'] = name + " The " + random.choice(nameInt)
+			char['name'] = name + " " + Names.getName() + " The " + random.choice(nameInt)
 			char['class'] = random.choice(classInt)
 		elif char['wis'] > char['str'] and char['wis'] > char['dex'] and char['wis'] > char['con'] and char['wis'] > char['int'] and char['wis'] > char['cha']:
-			char['name'] = name + " The " + random.choice(nameWis)
+			char['name'] = name + " " + Names.getName() + " The " + random.choice(nameWis)
 			char['class'] = random.choice(classWis)
 		elif char['cha'] > char['str'] and char['cha'] > char['dex'] and char['cha'] > char['con'] and char['cha'] > char['int'] and char['cha'] > char['wis']:
-			char['name'] = name + " The " + random.choice(nameCha)
+			char['name'] = name + " " + Names.getName() + " The " + random.choice(nameCha)
 			char['class'] = random.choice(classCha)
 		else: 
-			char['name'] = name + " The " + random.choice(nameDef)
+			char['name'] = name + " " + Names.getName() + " The " + random.choice(nameDef)
 			char['class'] = random.choice(classList)	
 
 		char['race'] = random.choice(race)
