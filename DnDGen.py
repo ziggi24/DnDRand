@@ -16,17 +16,29 @@ while ans:
 		alx = ["Lawful ", "Neutral ", "Chaotic "]
 		aly = ["Good ", "Neutral ", "Evil "]
 
-		nameStr = ["Strong", "Powerful", "Stable", "Big", "Forceful", "Unstoppable", "Destroyer", "Crusher", "All Powerful"]
-		nameDex = ["Dexterous", "Quick", "Speedy", "Agile", "Adept", "Nimble", "Shadow", "Sneaky", "Sneaker", "Backstabber", "Deceptive", "Twinkle Toes", "Fleet Footed"]
-		nameCon = ["Hearty", "Heavy", "Stout", "Portly", "Beefy", "Large", "Wall", "Muscle", "Diabetic", "Fat", "Tank", "Unmovable"]
-		nameInt = ["Intelligent", "Professor", "Scholar", "Astute", "Profound", "Brain", "Knowledgeable", "Well Read", "Nerd", "Graduated", "Wizard", "Four Eyed"]
-		nameWis = ["Wise", "Old", "Sage", "Spiritual", "Enlightened", "Rational", "Crucified", "All Knowing", "Master", "Sensei", "One Eyed", "Cosmic"]
-		nameCha = ["Charismatic", "Dazzling", "Beautiful", "Appealing", "Alluring", "Lover", "Companion", "Mistress", "Well Endowed", "Smooth Talker", "Whisperer", "Sensual", "Smooth"]
-		nameDef = ["Royal", "Unknown", "Lost", "Child", "Loner", "Wanderer", "Unforgiven", "Shackled", "Prisoner", "Connoisseur", "Jester", "Oaf", "Aloof", "Lazy", "Fallen", "Hilbilly", "Confused", "Slave", "Runaway", "Artist", "Loser", "Defeated", "Deadbeat", "Gambler", "Outsider", "Poet", "Homeless" ]
+		nameStr = ["Strong", "Powerful", "Stable", "Big", "Forceful", "Unstoppable"
+		, "Destroyer", "Crusher", "All Powerful"]
+		nameDex = ["Dexterous", "Quick", "Speedy", "Agile", "Adept", "Nimble", "Shadow"
+		, "Sneaky", "Sneaker", "Backstabber", "Deceptive", "Twinkle Toes", "Fleet Footed"]
+		nameCon = ["Hearty", "Heavy", "Stout", "Portly", "Beefy", "Large", "Wall"
+		, "Muscle", "Diabetic", "Fat", "Tank", "Unmovable"]
+		nameInt = ["Intelligent", "Professor", "Scholar", "Astute", "Profound", "Brain"
+		, "Knowledgeable", "Well Read", "Nerd", "Graduated", "Wizard", "Four Eyed"]
+		nameWis = ["Wise", "Old", "Sage", "Spiritual", "Enlightened", "Rational"
+		, "Crucified", "All Knowing", "Master", "Sensei", "One Eyed", "Cosmic"]
+		nameCha = ["Charismatic", "Dazzling", "Beautiful", "Appealing", "Alluring"
+		, "Lover", "Companion", "Mistress", "Well Endowed", "Smooth Talker"
+		, "Whisperer", "Sensual", "Smooth"]
+		nameDef = ["Royal", "Unknown", "Lost", "Child", "Loner", "Wanderer"
+		, "Unforgiven", "Shackled", "Prisoner", "Connoisseur", "Jester", "Oaf"
+		, "Aloof", "Lazy", "Fallen", "Hilbilly", "Confused", "Slave", "Runaway"
+		, "Artist", "Loser", "Defeated", "Deadbeat", "Gambler", "Outsider"
+		, "Poet", "Homeless" ]
 
 		race = ["Human", "Dwarf", "Elf", "Gnome", "Half-Elf", "Halfling", "Half-Orc"]
 
-		classList = ["Barbarian", "Bard", "Cleric", "Druid", "Fighter", "Monk", "Paladin", "Ranger", "Rogue", "Sorcerer", "Wizard"]
+		classList = ["Barbarian", "Bard", "Cleric", "Druid", "Fighter", "Monk"
+		, "Paladin", "Ranger", "Rogue", "Sorcerer", "Wizard"]
 		classStr = ["Barbarian", "Fighter", "Paladin", "Druid"]
 		classDex = ["Druid", "Ranger", "Rogue"]
 		classCon = ["Barbarian", "Fighter"]
@@ -35,9 +47,11 @@ while ans:
 		classCha = ["Bard", "Rogue"]
 
 		clericTrait = ["Air ", "Animal ", "Earth ", "Fire ", "Plant ", "Water ", "Weather "]
-		druidTrait = ["AnimalCompanion ", "Air ", "Animal ", "Earth ", "Fire ", "Plant ", "Water ", "Weather "]
+		druidTrait = ["AnimalCompanion ", "Air ", "Animal ", "Earth ", "Fire ", "Plant "
+		, "Water ", "Weather "]
 		rangerTrait = ["Archery ", "Two-Handed "]
-		sorcererTrait = ["Aberrant ", "Abyssal ", "Arcane ", "Celestial ", "Destined ", "Draconic ", "Elemental ", "Fey ", "Infernal ", "Undead "]
+		sorcererTrait = ["Aberrant ", "Abyssal ", "Arcane ", "Celestial ", "Destined "
+		, "Draconic ", "Elemental ", "Fey ", "Infernal ", "Undead "]
 
 		char['str'] = random.randint(1, 6) + random.randint(1, 6) + random.randint(1, 6)
 		char['dex'] = random.randint(1, 6) + random.randint(1, 6) + random.randint(1, 6)
@@ -92,7 +106,8 @@ while ans:
 		#print("charisma = ", char['cha'])
 		char['ali'] = "Alignment = " +  char['alx'] + char['aly']
 		
-		char['age'] = random.randint(1, 20) + random.randint(1, 20) + random.randint(1, 20) + 10
+		char['age'] = random.randint(1, 20) + random.randint(1, 20) 
+		+ random.randint(1, 20) + 10
 
 		fileName = name + '.txt'
 		file = open(fileName, 'w+')
