@@ -12,6 +12,7 @@ TO BE ADDED
 - random weapon based on class 
 - random apparel 
 - larger pool of names and titles (DONE)
+- list of last names added and random last name assigned (DONE)
 - find players top two stats and better sort them into classes
 - small backstory for each character (still being considered) 
 - anything else?
