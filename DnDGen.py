@@ -53,6 +53,20 @@ while ans:
 		sorcererTrait = ["Aberrant ", "Abyssal ", "Arcane ", "Celestial ", "Destined "
 		, "Draconic ", "Elemental ", "Fey ", "Infernal ", "Undead "]
 
+		weaponBarb = ["Spiked Gauntlet", "Heavy Mace", "Morning Star", "Long Spear"]
+		weaponBard = ["Lyre", "Lute", "Bongos", "Recorder", "Harpsichord"]
+		weaponCler = ["Quarterstaff", "Long Spear", "Dagger"]
+		weaponDrui = ["Dagger", "Quarterstaff", "Sickle", "Sling"]
+		weaponFigh = ["Punching Dagger", "Light Mace", "Heavy Mace", "Club", "Short Spear"]
+		weaponMonk = ["Quarterstaff", "Dagger", "Sling"]
+		weaponPala = ["Morning Star", "Long Spear", "Light Mace", "Javelin"]
+		weaponRangA = ["Light Crossbow", "Heavy Crossbow", "Sling", "Blow Darts"]
+		weaponRangD = ["Double Daggers", "Double Gauntlets", "Double Light Mace"]
+		weaponRogu = ["Dagger", "Gauntlet", "Punching Dagger", "Spiked Gauntlet", "Blow Darts"]
+		weaponSorc = ["Quarterstaff"]
+		weaponWiza = ["Quarterstaff"]
+
+
 		char['str'] = random.randint(1, 6) + random.randint(1, 6) + random.randint(1, 6)
 		char['dex'] = random.randint(1, 6) + random.randint(1, 6) + random.randint(1, 6)
 		char['con'] = random.randint(1, 6) + random.randint(1, 6) + random.randint(1, 6) 
@@ -92,14 +106,35 @@ while ans:
 
 		char['race'] = random.choice(race)
 
-		if char['class'] == "Cleric":
+		if char['class'] == "Barbarian":
+			char['weapon'] = random.choice(weaponBarb)
+		elif char['class'] == "Bard":
+			char['weapon'] = random.choice(weaponBard)
+		elif char['class'] == "Cleric":
 			char['class'] = random.choice(clericTrait) + "Cleric"
+			char['weapon'] = random.choice(weaponCler)
 		elif char['class'] == "Druid": 
 			char['class'] = random.choice(druidTrait) + "Druid"
+			char['weapon'] = random.choice(weaponDrui)
+		elif char['class'] == "Fighter":
+			char['weapon'] = random.choice(weaponFigh)
+		elif char['class'] == "Monk":
+			char['weapon'] = random.choice(weaponMonk)
+		elif char['class'] == "Paladin":
+			char['weapon'] = random.choice(weaponPala) 
 		elif char['class'] == "Ranger":
 			char['class'] = random.choice(rangerTrait) + "Ranger"
+			if char['class'] == "Archery Ranger":
+				char['weapon'] = random.choice(weaponRangA)
+			elif char['class'] == "Two-Handed Ranger":
+				char['weapon'] = random.choice(weaponRangD)
+		elif char['class'] == "Rogue":
+			char['weapon'] = random.choice(weaponRogu)
+		elif char['class'] == "Wizard":
+			char['weapon'] = random.choice(weaponWiza)
 		elif char['class'] == "Sorcerer":
-			char['class'] = random.choice(sorcererTrait) + "Sorcerer" 
+			char['class'] = random.choice(sorcererTrait) + "Sorcerer"
+			char['weapon'] = random.choice(weaponSorc) 
 
 		print("Character name: " + char['name'])
 		#print("Race: ", char['race'])
@@ -112,8 +147,8 @@ while ans:
 		#print("charisma = ", char['cha'])
 		char['ali'] = "Alignment = " +  char['alx'] + char['aly']
 		
-		char['age'] = random.randint(1, 20) + random.randint(1, 20) 
-		+ random.randint(1, 20) + 10
+		char['age'] = ( random.randint(1, 20) + random.randint(1, 20) 
+		+ random.randint(1, 20) + 10)
 
 		fileName = name + '.txt'
 		file = open(fileName, 'w+')
@@ -126,6 +161,8 @@ while ans:
 		file.write("Race: " + char['race'])
 		file.write("\n")
 		file.write("Class: " + str(char['class']))
+		file.write("\n")
+		file.write("Starting Weapon: " + char['weapon'])
 		file.write("\n")
 		file.write(str(char['ali']))
 		file.write("\n")

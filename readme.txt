@@ -9,7 +9,7 @@ TO BE ADDED
 ~~~~~~~~~~~
 
 - comments to the python script
-- random weapon based on class 
+- random weapon based on class (DONE)
 - random apparel 
 - larger pool of names and titles (DONE)
 - list of last names added and random last name assigned (DONE)
