@@ -8,9 +8,9 @@ this is version 1.0 of the code
 TO BE ADDED
 ~~~~~~~~~~~
 
+- random apparel based on class 
 - comments to the python script (WIP)
 - random weapon based on class (DONE)
-- random apparel 
 - larger pool of names and titles (DONE)
 - list of last names added and random last name assigned (DONE)
 - find players top two stats and better sort them into classes
