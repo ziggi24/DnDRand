@@ -8,7 +8,7 @@ this is version 1.0 of the code
 TO BE ADDED
 ~~~~~~~~~~~
 
-- comments to the python script
+- comments to the python script (WIP)
 - random weapon based on class (DONE)
 - random apparel 
 - larger pool of names and titles (DONE)

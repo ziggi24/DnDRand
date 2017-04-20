@@ -1,3 +1,19 @@
+#DnDGen Script
+#
+#This script will take in a players name, and then assign a surname, title, and roll 
+#the players stats. Once this is done the script will assign a class, and race based on 
+#stats, and also assign an age, and some starting equipment. 
+#
+#the public repo for this script can be found at:
+#https://github.com/ziggi24/DnDRand
+#
+#@require random
+#@require sys
+#@require Names.py
+#@author Zachary Sharpe
+#
+
+
 import random 
 import sys
 import Names
