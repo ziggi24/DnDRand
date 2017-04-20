@@ -1,10 +1,12 @@
-SampleCharacter The Scholar
-Race: Dwarf
-Class: Destined Sorcerer
-alignment = Lawful Good 
-Strength: 10
-Dexterity: 6
-Constitution: 10
+SampleCharacter Ketill The Heavy
+Age: 36 years
+Race: Half-Elf
+Class: Fighter
+Starting Weapon: Short Spear
+Alignment = Lawful Evil 
+Strength: 9
+Dexterity: 8
+Constitution: 15
 Intelligence: 12
-Wisdom: 10
-Charisma: 11
+Wisdom: 8
+Charisma: 12
