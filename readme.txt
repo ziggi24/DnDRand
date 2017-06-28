@@ -8,11 +8,15 @@ this is version 1.0 of the code
 TO BE ADDED
 ~~~~~~~~~~~
 
-- random apparel based on class 
+V1.0
+~~~~
 - comments to the python script (WIP)
 - random weapon based on class (DONE)
 - larger pool of names and titles (DONE)
 - list of last names added and random last name assigned (DONE)
-- find players top two stats and better sort them into classes
-- small backstory for each character (still being considered) 
-- anything else?
+
+V2.0
+~~~~
+- GUI implementation
+- select directory to output character sheets 
+- cross platform support (Windows 10 and Linux. Mac to come later) 
