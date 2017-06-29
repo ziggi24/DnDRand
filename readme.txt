@@ -15,8 +15,11 @@ V1.0
 - larger pool of names and titles (DONE)
 - list of last names added and random last name assigned (DONE)
 
-V2.0
-~~~~
-- GUI implementation
-- select directory to output character sheets 
-- cross platform support (Windows 10 and Linux. Mac to come later) 
+V2.0 Website Implementation
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- create formatted return 
+- text box to insert name of character 
+- auto page reload with full formatted character sheet 
+- database of character sheets 
+- custom url /characterName with all created character names 
+- page with auto-updating list of all characters created. ever 
